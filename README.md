@@ -1,6 +1,9 @@
 Week 6 Assignment: Safe Functions
 Files
-safe_tools.py — Contains three functions that handle division errors, invalid number input, and missing dictionary keys.
-README.md — Describes the assignment files and explains why error handling is needed.
+safe_tools.py — Contains three functions that handle division by zero, invalid integer conversion, and missing dictionary keys.
+safe_tools_output.png — Screenshot showing the program's execution and output.
+README.md — Documents the assignment and explains why exception handling is necessary.
+
 Why can't an if check catch "abc" on its own?
-An if check can test conditions, but it does not automatically prevent int("abc") from raising a ValueError. Using try/except allows the program to handle the conversion error and continue running.
+
+An if statement can check conditions, but it cannot automatically prevent int("abc") from raising a ValueError. Using try/except allows Python to handle the conversion error gracefully and lets the program continue running.
